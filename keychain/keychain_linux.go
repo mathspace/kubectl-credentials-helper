@@ -51,9 +51,6 @@ func CreateSecret(clusterName, clusterEndpoint, credentials string) error {
 		return err
 	}
 
-	defer func() {
-		_ = srv.LockItems([]dbus.ObjectPath{secretservice.DefaultCollection})
-	}()
 	if err := srv.Unlock([]dbus.ObjectPath{secretservice.DefaultCollection}); err != nil {
 		return err
 	}
@@ -125,9 +122,6 @@ func openItem(
 		return err
 	}
 
-	defer func() {
-		_ = srv.LockItems([]dbus.ObjectPath{secretservice.DefaultCollection})
-	}()
 	if err := srv.Unlock([]dbus.ObjectPath{secretservice.DefaultCollection}); err != nil {
 		return err
 	}

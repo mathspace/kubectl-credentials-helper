@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/plumber-cd/kubectl-credentials-helper/keychain"
+	"github.com/mathspace/kubectl-credentials-helper/keychain"
 	"github.com/spf13/cobra"
 	clientauthentication "k8s.io/client-go/pkg/apis/clientauthentication/v1"
 	"k8s.io/client-go/tools/auth/exec"

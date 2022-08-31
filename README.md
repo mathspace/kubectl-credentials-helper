@@ -5,7 +5,7 @@ This is a `kubectl` credentials helper. It is using your local OS keychain to st
 To install:
 
 ```bash
-go install github.com/plumber-cd/kubectl-credentials-helper
+go install github.com/mathspace/kubectl-credentials-helper
 ```
 
 You can also download this from releases.

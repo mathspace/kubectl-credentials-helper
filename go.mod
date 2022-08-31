@@ -1,4 +1,4 @@
-module github.com/plumber-cd/kubectl-credentials-helper
+module github.com/mathspace/kubectl-credentials-helper
 
 go 1.18
 

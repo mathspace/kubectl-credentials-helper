@@ -14,7 +14,7 @@ import (
 	"k8s.io/client-go/tools/clientcmd"
 	cmdApi "k8s.io/client-go/tools/clientcmd/api"
 
-	"github.com/plumber-cd/kubectl-credentials-helper/keychain"
+	"github.com/mathspace/kubectl-credentials-helper/keychain"
 )
 
 // OsFs is an instance of afero.NewOsFs

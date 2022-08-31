@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/plumber-cd/kubectl-credentials-helper/cmd"
+	"github.com/mathspace/kubectl-credentials-helper/cmd"
 )
 
 func main() {

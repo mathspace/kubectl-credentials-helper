@@ -10,7 +10,7 @@ import (
 	"github.com/spf13/cobra"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/plumber-cd/kubectl-credentials-helper/keychain"
+	"github.com/mathspace/kubectl-credentials-helper/keychain"
 )
 
 func init() {

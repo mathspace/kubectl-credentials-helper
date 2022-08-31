@@ -26,7 +26,7 @@ jobs:
         env:
           GOARCH: ${{ matrix.arch }}
           CGO_ENABLED: "1"
-        run: go build -ldflags="-X 'github.com/plumber-cd/kubectl-credentials-helper/cmd.Version==${{ env.RELEASE_VERSION }}'" -o build/kubectl-credentials-helper-${{ matrix.os }}-${{ matrix.arch }}
+        run: go build -ldflags="-X 'github.com/mathspace/kubectl-credentials-helper/cmd.Version==${{ env.RELEASE_VERSION }}'" -o build/kubectl-credentials-helper-${{ matrix.os }}-${{ matrix.arch }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
@@ -52,7 +52,7 @@ jobs:
         env:
           GOARCH: ${{ matrix.arch }}
           CGO_ENABLED: "1"
-        run: go build -ldflags="-X 'github.com/plumber-cd/kubectl-credentials-helper/cmd.Version==${{ env.RELEASE_VERSION }}'" -o build/kubectl-credentials-helper-${{ matrix.os }}-${{ matrix.arch }}
+        run: go build -ldflags="-X 'github.com/mathspace/kubectl-credentials-helper/cmd.Version==${{ env.RELEASE_VERSION }}'" -o build/kubectl-credentials-helper-${{ matrix.os }}-${{ matrix.arch }}
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
@@ -78,7 +78,7 @@ jobs:
         env:
           GOARCH: ${{ matrix.arch }}
           CGO_ENABLED: "1"
-        run: go build -ldflags="-X 'github.com/plumber-cd/kubectl-credentials-helper/cmd.Version==${{ env.RELEASE_VERSION }}'" -o build/kubectl-credentials-helper-${{ matrix.os }}-${{ matrix.arch }}.exe
+        run: go build -ldflags="-X 'github.com/mathspace/kubectl-credentials-helper/cmd.Version==${{ env.RELEASE_VERSION }}'" -o build/kubectl-credentials-helper-${{ matrix.os }}-${{ matrix.arch }}.exe
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
